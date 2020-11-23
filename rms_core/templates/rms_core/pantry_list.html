@@ -1,0 +1,10 @@
+Pantry:
+{% if generic_list %}
+    <ul>
+    {% for generic in generic_list %}
+        <li><a href="{% url 'rms_core:pantry_detail' generic.id %}">{{ generic.supply }} -- {{ generic.servings_remaining }} -- {{ generic.expiration_date }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No pantry items are available.</p>
+{% endif %}

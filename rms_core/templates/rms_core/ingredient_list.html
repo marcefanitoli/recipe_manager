@@ -1,0 +1,10 @@
+Ingredients:
+{% if generic_list %}
+    <ul>
+    {% for generic in generic_list %}
+        <li><a href="{% url 'rms_core:ingredient_detail' generic.id %}">{{ generic.name }} -- {{ generic.category }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No ingredients are available.</p>
+{% endif %}

@@ -1,0 +1,10 @@
+Recipe Instances:
+{% if generic_list %}
+    <ul>
+    {% for generic in generic_list %}
+        <li><a href="{% url 'rms_core:recipe_instance_detail' generic.id %}">{{ generic.name }} -- {{ generic.rating }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No recipe instances are available.</p>
+{% endif %}

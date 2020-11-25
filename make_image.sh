@@ -1,0 +1,1 @@
+docker build -f Dockerfile -t recipe_manager:latest .

@@ -6,4 +6,5 @@ ADD ./app/ /app/
 RUN pip install -r requirements.txt
 
 EXPOSE 4000
+#This is temporary. Will be switched to gunicorn.
 CMD ["python", "/app/manage.py", "runserver", "0.0.0.0:4000"]

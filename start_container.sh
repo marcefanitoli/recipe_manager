@@ -1,1 +1,1 @@
-docker run -p 4000:4000 recipe_manager
+docker run -p 4000:4000 -v recipe_vol:/data recipe_manager

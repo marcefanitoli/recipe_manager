@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Ingredient(models.Model):
-    name = models.CharField(max_length=200, default="", blank=True)
+    name = models.CharField(max_length=200, default="", blank=True, unique=True)
     description = models.CharField(max_length=200, default="", blank=True)
     category = models.CharField(max_length=200, default="", blank=True)
     calorie_density = models.CharField(max_length=200, default="", blank=True)

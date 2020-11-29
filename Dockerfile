@@ -11,4 +11,5 @@ RUN python manage.py migrate
 RUN python manage.py test
 
 EXPOSE 4000
+#This is temporary. Will be switched to gunicorn.
 CMD ["python", "/app/manage.py", "runserver", "0.0.0.0:4000"]

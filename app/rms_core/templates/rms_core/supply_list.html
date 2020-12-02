@@ -1,3 +1,6 @@
+{% extends "./template.html" %}
+{% block title %}Supply List{% endblock %}
+{% block content %}
 Supplies:
 {% if generic_list %}
     <ul>
@@ -8,3 +11,4 @@ Supplies:
 {% else %}
     <p>No supplies are available.</p>
 {% endif %}
+{% endblock %}

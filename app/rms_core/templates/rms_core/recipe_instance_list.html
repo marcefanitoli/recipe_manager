@@ -1,3 +1,6 @@
+{% extends "./template.html" %}
+{% block title %}Recipe Instance List{% endblock %}
+{% block content %}
 Recipe Instances:
 {% if generic_list %}
     <ul>
@@ -8,3 +11,4 @@ Recipe Instances:
 {% else %}
     <p>No recipe instances are available.</p>
 {% endif %}
+{% endblock %}

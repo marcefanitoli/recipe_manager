@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 app_name = 'rms_core'
 
@@ -18,3 +19,5 @@ urlpatterns = [
     path('recipe_instance/<int:recipe_instance_id>/', views.recipe_instance_detail, name='recipe_instance_detail'),
 
 ]
+
+urlpatterns += staticfiles_urlpatterns()

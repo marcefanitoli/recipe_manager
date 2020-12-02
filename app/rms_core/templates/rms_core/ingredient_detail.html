@@ -1,4 +1,8 @@
+{% extends "./template.html" %}
+{% block title %}Ingredient Details{% endblock %}
+{% block content %}
 <ul>
 <li>name --- status -- description </li>
 <li>{{ item.name }} -- {{ item.category }} -- {{ item.description }}</li>
 </ul>
+{% endblock %}

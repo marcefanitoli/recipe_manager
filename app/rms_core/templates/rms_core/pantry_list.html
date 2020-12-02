@@ -1,3 +1,6 @@
+{% extends "./template.html" %}
+{% block title %}Pantry List{% endblock %}
+{% block content %}
 Pantry:
 {% if generic_list %}
     <ul>
@@ -8,3 +11,4 @@ Pantry:
 {% else %}
     <p>No pantry items are available.</p>
 {% endif %}
+{% endblock %}

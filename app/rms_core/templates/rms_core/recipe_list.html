@@ -1,3 +1,6 @@
+{% extends "./template.html" %}
+{% block title %}Recipe List{% endblock %}
+{% block content %}
 Recipes:
 {% if generic_list %}
     <ul>
@@ -8,3 +11,4 @@ Recipes:
 {% else %}
     <p>No recipes are available.</p>
 {% endif %}
+{% endblock %}

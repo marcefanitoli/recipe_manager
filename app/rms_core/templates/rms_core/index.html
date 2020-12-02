@@ -1,8 +1,2 @@
-<ul>
-    <li><a href="{% url 'rms_core:ingredient_list' %}"> Ingredients </a></li>
-    <li><a href="{% url 'rms_core:recipe_list' %}"> Recipes </a></li>
-    <li><a href="{% url 'rms_core:supply_list' %}"> Supplies </a></li>
-    <li><a href="{% url 'rms_core:pantry_list' %}"> Pantries </a></li>
-    <li><a href="{% url 'rms_core:recipe_instance_list' %}"> Recipe Instances </a></li>
-</ul>
-
+{% extends "./template.html" %}
+{% block title %}Index{% endblock %}
